@@ -64,7 +64,3 @@ project(":core") {
 
     }
 }
-
-test {
-    useJUnitPlatform()
-}
