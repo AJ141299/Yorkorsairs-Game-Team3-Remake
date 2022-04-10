@@ -35,19 +35,10 @@ task dist(type: Jar) {
 }
 
 
-
-
 dist.dependsOn classes
 
 eclipse.project.name = appName + "-desktop"
 
-dependencies {
-    implementation 'org.junit.jupiter:junit-jupiter:5.8.2'
-}
 
-test {
-    useJUnitPlatform()
-    testLogging {
-        events "passed", "skipped", "failed"
-    }
-}
+
+

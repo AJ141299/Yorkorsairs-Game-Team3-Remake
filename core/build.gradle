@@ -4,13 +4,26 @@ sourceCompatibility = 1.8
 sourceSets.main.java.srcDirs = ["src/"]
 
 eclipse.project.name = appName + "-core"
+
+
+
+
+
 dependencies {
     implementation 'org.junit.jupiter:junit-jupiter:5.8.2'
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.8.2'
 }
 
 test {
-    useJUnitPlatform()
     testLogging {
-        events "passed", "skipped", "failed"
+        events "passed", "failed", "skipped"
+    }
+}
+
+tasks.withType(Test) {
+    testLogging {
+        exceptionFormat "full"
+        events "started", "skipped", "passed", "failed"
+        showStandardStreams true
     }
 }

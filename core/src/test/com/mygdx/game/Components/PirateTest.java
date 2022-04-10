@@ -8,6 +8,12 @@ import static org.junit.jupiter.api.Assertions.*;
 class PirateTest {
     @Test
     void simpleTest() {
-        Assertions.assertEquals(100, 100);
+        Assertions.assertEquals(true, true);
+    }
+
+    @Test
+    void simpleTest2() {
+        Assertions.assertEquals(true, false);
     }
 }
+
