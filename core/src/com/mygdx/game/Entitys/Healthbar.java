@@ -2,10 +2,8 @@ package com.mygdx.game.Entitys;
 
 import com.badlogic.gdx.math.Vector2;
 import com.mygdx.game.Components.HealthbarRenderable;
-import com.mygdx.game.Components.Renderable;
 import com.mygdx.game.Components.Transform;
 import com.mygdx.game.Managers.RenderLayer;
-import com.mygdx.game.Managers.ResourceManager;
 
 /**
  * Entity to show the amount of health
