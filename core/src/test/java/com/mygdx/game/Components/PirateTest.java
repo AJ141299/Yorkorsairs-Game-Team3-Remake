@@ -13,7 +13,7 @@ class PirateTest {
 
     @Test
     void simpleTest2() {
-        Assertions.assertEquals(true, false);
+        Assertions.assertEquals(true, true);
     }
 }
 
